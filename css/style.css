@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kaushan Script", cursive;
+}
+
+:root {
+  --skintone-color: #DE9B72;
+  --dark-color: #3A3D3E;
+}
+
+#todo {
+  height: 100vh;
+  width: 100vw;
+  background: var(--dark-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#exterior {
+  height: 80vh;
+  width: 60%;
+  border: 1px solid var(--skintone-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#exterior #medio {
+  height: 95%;
+  width: 95%;
+  border: 7px solid var(--skintone-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#exterior #medio #interior {
+  height: 95%;
+  width: 95%;
+  border: 1px solid var(--skintone-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+#exterior #medio #interior #top-left {
+  height: 10vh;
+  z-index: 3;
+  position: absolute;
+  top: -0.5vw;
+  left: -0.5vw;
+}
+#exterior #medio #interior #top-right {
+  height: 10vh;
+  z-index: 3;
+  position: absolute;
+  top: -0.5vw;
+  left: 49vw;
+  -webkit-transform: scaleX(-1);
+}
+#exterior #medio #interior #bottom-left {
+  height: 10vh;
+  z-index: 3;
+  position: absolute;
+  top: 30vw;
+  left: -0.5vw;
+  -webkit-transform: scaleY(-1);
+}
+#exterior #medio #interior #bottom-right {
+  height: 10vh;
+  z-index: 3;
+  position: absolute;
+  top: 30vw;
+  left: 49vw;
+  -webkit-transform: scale(-1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  letter-spacing: 5px;
+}
+
+#tit {
+  display: none;
+}
+
+.flipped {
+  background: #FFF8E6;
+}
+.flipped h1 {
+  display: none;
+}
+.flipped img {
+  display: none;
+}
+.flipped #tit {
+  display: flex;
+  flex-direction: column;
+  transform: rotateY(180deg);
+  color: white;
+  animation: typing 7s infinite;
+  font-size: 40px;
+  align-items: center;
+  height: 100%;
+  justify-content: space-evenly;
+}
+@keyframes typing {
+  from {
+    color: white;
+  }
+  to {
+    color: red;
+  }
+}
+.flipped #medio #interior {
+  border: 8px dotted #381D2A !important;
+}
+
+svg {
+  height: 100px;
+}
+
+#primero {
+  display: flex;
+  width: 55vw;
+  justify-content: center;
+  align-items: end;
+}
+
+#ultimo {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */

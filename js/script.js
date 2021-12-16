@@ -1,6 +1,8 @@
 var exterior=document.getElementById("exterior");
 
 
+//animacion de mensaje main navideño
+var mensaje=document.getElementById("mensaje");
 
 //nieve
 document.addEventListener('keyup', (e)=> {
@@ -11,6 +13,7 @@ document.addEventListener('keyup', (e)=> {
     exterior.style.transition="transform 0.6s";
     exterior.style.transformStyle ="preserve-3d";
     exterior.style.transform="rotateY(180deg)";
+    gsap.to(mensaje, {duration: 6, text: "May the sweet magic of christmas conspire to gladden your heart and fill every desire"})
     vamos();
   } else {
     if(e.code=="ArrowLeft") {
@@ -18,6 +21,7 @@ document.addEventListener('keyup', (e)=> {
       exterior.style.transition="transform 0.6s";
       exterior.style.transformStyle ="preserve-3d";
       exterior.style.transform="rotateY(0deg)";
+      gsap.to(mensaje, {duration: 1, text: ""})
     }
 
   }
@@ -100,3 +104,5 @@ function inicio() {
 }
 
 window.onload=inicio();
+
+

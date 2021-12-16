@@ -122,24 +122,10 @@ h1 {
    			text-align: center;
    			font-size: 28px;
    			word-wrap: break-word;
-   			&::after {
-   				animation: changeLetter 3s linear infinite alternate;
-   				//content: "asdasd";
-   			}
+   			
    		}
 	}
 
-	@keyframes changeLetter {
-		  0% {
-		    content: "A";
-		  }
-		  50% {
-		  	color: blue;
-		  }
-		  100% {
-		    content: "B";
-		  }
-		}
 	@keyframes typing {
 		  from {
 		  	color: white;

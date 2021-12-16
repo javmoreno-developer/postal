@@ -5,6 +5,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Kaushan Script', cursive;
+
 }
 
 $maroon: #381D2A;
@@ -109,12 +110,36 @@ h1 {
 		flex-direction: column;
 		transform: rotateY(180deg);
 		color:white;
-		animation: typing 7s infinite;
+		animation: typing 7s forwards;
 		font-size: 40px;
 		align-items: center;
-    height: 100%;
-    justify-content: space-evenly;
+  	 	height: 100%;
+   		justify-content: space-evenly;
+   		word-wrap: break-word;
+   		#message {
+   			
+   			width: 80%;
+   			text-align: center;
+   			font-size: 28px;
+   			word-wrap: break-word;
+   			&::after {
+   				animation: changeLetter 3s linear infinite alternate;
+   				//content: "asdasd";
+   			}
+   		}
 	}
+
+	@keyframes changeLetter {
+		  0% {
+		    content: "A";
+		  }
+		  50% {
+		  	color: blue;
+		  }
+		  100% {
+		    content: "B";
+		  }
+		}
 	@keyframes typing {
 		  from {
 		  	color: white;
@@ -131,7 +156,7 @@ h1 {
 }
 
 svg {
-	height: 100px;
+	height: 70px;
 }
 
 #primero {
@@ -142,4 +167,20 @@ svg {
 }
 #ultimo {
 	display: flex;
+	width: 55vw;
+	justify-content: center;
+	align-items:center;
+}
+
+#snow {
+	position:absolute;
+	z-index: 3;
+	height: 95vh;
+    width: 95%;
+}
+
+@media (max-width: 1300px) { 
+	.corner-decoration {
+		display: none;
+	}
 }

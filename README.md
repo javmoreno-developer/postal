@@ -7,4 +7,4 @@ Este proyecto es un modelo de tarjeta navideña,este tendrá un efecto al pulsar
 
 ![mensaje](https://github.com/javmoreno-developer/postal/blob/main/imagenes%20readme/2.png)
 
-![mensaje](https://github.com/javmoreno-developer/postal/blob/main/imagenes%20readme/3.png)
+![mensaje](https://github.com/javmoreno-developer/postal/blob/main/imagenes%20readme/2022-01-15-1903-31.gif)

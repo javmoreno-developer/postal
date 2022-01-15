@@ -1,4 +1,4 @@
-# postal navideña (Proyecto navidad 2021-2022)
+# Postal navideña (Proyecto navidad 2021-2022)
 
 ## ¿Que es?
 Este proyecto es un modelo de tarjeta navideña,este tendrá un efecto al pulsar la flecha derecha del teclado

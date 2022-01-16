@@ -1,7 +1,7 @@
 # Postal navideña (Proyecto navidad 2021-2022)
 
 ## ¿Que es?
-Este proyecto es un modelo de tarjeta navideña,esta tendrá un efecto al pulsar la flecha derecha del teclado
+Este proyecto es un modelo de tarjeta navideña
 
 ![mensaje](https://github.com/javmoreno-developer/postal/blob/main/imagenes%20readme/1.png)
 
